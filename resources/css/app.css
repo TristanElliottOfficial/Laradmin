@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Alerts */
+.alert {
+    @apply flex items-center border-none rounded-sm shadow-sm px-3 py-3 font-sans text-base font-light;
+}
+.alert-icon {
+    @apply animate-pulse pr-3;
+}
+.alert-error {
+    @apply bg-red-500;
+}
+.icon-error {
+    @apply text-red-200;
+}
+.text-error {
+    @apply text-red-50;
+}
+.alert-success {
+    @apply bg-green-500;
+}
+.icon-success {
+    @apply text-green-200;
+}
+.text-success {
+    @apply text-green-50;
+}
+.alert-warning {
+    @apply bg-yellow-500;
+}
+.icon-warning {
+    @apply text-yellow-200;
+}
+.text-warning {
+    @apply text-yellow-50;
+}
+
+/* Buttons */
+.button {
+    @apply block px-3 py-2 rounded-sm shadow-sm font-sans font-light text-base w-auto hover:shadow-md focus:outline-none focus:shadow-none focus:ring-2 ring-opacity-50 transition duration-200 ease-in-out;
+}
+.button-primary {
+    @apply bg-blue-500 text-blue-50 hover:bg-blue-600 focus:bg-blue-700 ring-blue-500;
+}
+.button-secondary {
+    @apply bg-gray-500 text-gray-50 hover:bg-gray-600 focus:bg-gray-700 ring-gray-500;
+}
+.button-success {
+    @apply bg-green-500 text-green-50 hover:bg-green-600 focus:bg-green-700 ring-green-500;
+}
+.button-warning {
+    @apply bg-yellow-500 text-yellow-50 hover:bg-yellow-600 focus:bg-yellow-700 ring-yellow-500;
+}
+.button-danger {
+    @apply bg-red-500 text-red-50 hover:bg-red-600 focus:bg-red-700 ring-red-500;
+}
+
+/* Inputs */
+.input {
+    @apply block py-2;
+}
+.input label {
+    @apply block pb-2 font-light font-sans text-gray-700;
+}
+.input input {
+    @apply block px-4 py-2 w-full border rounded-sm appearance-none focus:outline-none focus:ring-2 ring-opacity-50 ring-blue-500 hover:shadow-md transition duration-200 ease-in-out font-sans font-light;
+}
+/* Checkbox */
+.checkbox {
+    @apply flex items-center my-2 pb-2;
+}
+.checkbox-input {
+    @apply h-5 w-5 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded-sm;
+}
+.checkbox-label {
+    @apply ml-2 block text-base text-gray-700;
+}
+
+/* Input Errors */
+.input-error {
+    @apply border-red-500 placeholder-red-500 text-red-500;
+}
+.error-message {
+    @apply flex items-center px-4 py-2 rounded-sm bg-red-500 text-red-200 font-sans font-light mt-3;
+}
+.error-message .icon {
+    @apply pr-2 text-red-100 animate-pulse;
+}
+.error-message .text {
+    @apply text-base;
+}
+
+/* Cards */
+.card {
+    @apply bg-white px-8 py-8 shadow-md rounded-sm;
+}
+.card-title {
+    @apply block text-3xl font-sans font-light text-gray-800 pb-3;
+}
+
+/* Tables */
+.table-default {
+    @apply w-full font-sans text-base;
+}
+.table-head {
+    @apply bg-gray-100;
+}
+.table-head-row {
+    @apply border-b border-gray-200 shadow-md;
+}
+.table-header {
+    @apply px-6 py-2 text-left font-medium text-gray-800;
+}
+.table-body-row {
+    @apply bg-white hover:bg-gray-100 hover:shadow-md border-b border-gray-200;
+}
+.table-data {
+    @apply px-6 py-2 text-gray-600 font-light;
+}
+.table-actions {
+    @apply px-6 py-2;
+}
+.table-button {
+    @apply inline-block px-2 py-1 font-light text-sm rounded-sm shadow-sm hover:shadow-md focus:outline-none focus:ring-2 ring-opacity-50 transition duration-200 ease-in-out;
+}
+
+/* Layouts */
+.main-header {
+    @apply flex items-center justify-between bg-white px-10 py-6 shadow-md;
+}
+.header-left {
+    @apply block;
+}
+.header-title {
+    @apply text-4xl font-light text-gray-800;
+}
+.header-description {
+    @apply text-sm text-gray-500;
+}
+.header-right {
+    @apply flex space-x-2;
+}
